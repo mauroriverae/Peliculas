@@ -28,6 +28,9 @@
                 </tbody>
             </table>
             ";
-    
+
+        }
+        function showError(){
+            echo "<h2>Error! genero no especificado</h2>";
         }
     }

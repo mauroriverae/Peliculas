@@ -21,5 +21,6 @@
     
             //genero la lista
             $this->view->printMovies($genre, $movies);
+            include "templates/footer";
         }
     }

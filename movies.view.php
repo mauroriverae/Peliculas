@@ -1,11 +1,12 @@
 <?php
     class MovieView{
-        function printMovies($genre, $movies) {       
+        function printMovies($genre, $movies) {
+            include_once "templates/headers.php";       
             echo "<h1> lista por genero: $genre</h1>";
-            echo "<a href='index.html'>Volver</a>";
+            echo "<a class='btn btn-info' href='index.html'>Volver</a>";
     
             echo "
-            <table>
+            <table class='table table-striped'>
                 <thead>
                     <tr>
                         <th>Titulo</th>

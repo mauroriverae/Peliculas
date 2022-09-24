@@ -1,20 +1,18 @@
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
 </head>
 <body>
 
-    <h1>Peliculas por género</h1>
-
-    <ul>
-        <li><a href="peliculas.php?genre=Comedy">Comedias</a></li>
-        <li><a href="peliculas.php?genre=Drama">Drama</a></li>
-        <li><a href="peliculas.php?genre=Romance">Románticas</a></li>
-        <li><a href="peliculas.php?genre=Animation">Animación</a></li>
-        <li><a href="peliculas.php?genre=Action">Acción</a></li>
-    </ul>
-
+    <h1 class="bg-primary  badge text-center">Peliculas por género</h1>
+    <nav class="nav flex-column">
+        <a class="nav-link active" aria-current="page" href="peliculas.php?genre=Comedy">Comedias</a>
+        <a class="nav-link active" href="peliculas.php?genre=Drama" >Dramas</a>
+        <a class="nav-link active" href="peliculas.php?genre=Romance">Romanticas</a>
+        <a class="nav-link active" href="peliculas.php?genre=Action">Accion</a>
+      </nav>
 </body>
 </html>

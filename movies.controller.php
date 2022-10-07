@@ -15,11 +15,7 @@
                 die; 
             }
             $genre = $_GET['genre'];    
-    
-            //le pido al model las peliculas
             $movies = $this->model -> getMoviesByGenre($genre);
-    
-            //genero la lista
             $this->view->printMovies($genre, $movies);
             include "templates/footer";
         }
